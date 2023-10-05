@@ -240,3 +240,85 @@ nav .barnav div:hover{
     border: 1px solid #ccc;
     margin-bottom: 10px;
 }
+
+#contenedor-formulario {
+    width: 300px;
+    background-color: white;
+    max-height: calc(100vh - 300px);
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px auto;
+    overflow-y: auto;
+}
+
+#login h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+#login input,
+#register input {
+    margin-bottom: 20px; 
+    width: calc(100% - 40px); 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login button,
+#register button,
+#textoLink a {
+    background-color: #D4AF37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login button,
+#register button,
+#textoLink a {
+    background-color: #D4AF37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login button:hover,
+#register button:hover,
+#textoLink a:hover {
+    background-color: #FFD700;
+}
+
+#contenedor-formulario {
+    background-color: #f2f2f2;
+}
+
+#textoLink a {
+    text-decoration: none;
+}
+
+#textoLink a:hover {
+    text-decoration: underline;
+}
+
+#textoLink #link {
+    color: black; 
+    text-decoration: underline; 
+    background-color: #f2f2f2;
+    padding: 0px;
+}
+
+#textoLink #link:hover {
+    color: blue;
+}
+
+
+

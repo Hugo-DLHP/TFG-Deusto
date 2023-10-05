@@ -22,6 +22,7 @@
         <div class="contenedor-formulario" id="contenedor-formulario">
             <!-- Formulario de inicio de sesión -->
             <form id="login">
+                <h2>Iniciar Sesión</h2>
                 <label for="usuario">Nombre de Usuario:</label>
                 <input type="text" id="usuario" required>
                 <label for="contraseña">Contraseña:</label>
@@ -30,7 +31,7 @@
             </form>
 
             <!-- Formulario de registro -->
-            <form id="register" style="display: none;">
+            <form id="register" style="display: none;" action="registrar.php" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" required>
                 <label for="apellidos">Apellidos:</label>
