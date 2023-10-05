@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INICIO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="logo"><img src="../img/pruebaLogo1.png" alt=""></div>
+        <div class="logo"><a href="./index.html"><img src="../img/pruebaLogo1.png" alt=""></a></div>
         <div class="barnav">
-            <a href="#" id="sesion">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            <a href="./index.php" id="sesion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
                 </svg>
             </a>          
             <button id="menu-toggle">☰</button>
@@ -24,74 +23,166 @@
             <div class="espacio" id="cat1"></div>
             <div class="seccion" id="terror">
                 <h2>Terror</h2>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
                 </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
                 </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                </div>
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
+                </div> 
             </div>
             <div class="espacio" id="cat2"></div>
             <div class="seccion" id="romance">
                 <h2>Romance</h2>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
                 </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
                 </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
                 </div>
             </div>
             <div class="espacio" id="cat3"></div>
             <div class="seccion" id="fantasia">
                 <h2>Fantasia</h2>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
                 </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
                 </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                </div>
-                <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                </div>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat enim corrupti dolores rem aliquam nobis repellendus error iusto! Atque blanditiis quod id. Ratione tempora nostrum facilis repellat veniam non possimus!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ad natus adipisci incidunt optio cupiditate necessitatibus earum unde sapiente autem, quaerat eligendi vel! Id voluptatum et eveniet cumque ducimus commodi.
+                <div class="post">
+                    <div id="usuario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Nombre del Usuario</span>
+                    </div>
+                    <hr class="linea-divisoria">
+                    <div id="contenido-post">
+                        Titulo del libro: <spam id="titulo"></spam><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur soluta in delectus dolorem nesciunt accusamus totam non? Blanditiis et exercitationem delectus maxime laudantium, totam libero vero necessitatibus deleniti, quae laborum.
+                        Dolor enim aperiam ipsum, reiciendis, consequuntur aspernatur neque vel qui rem inventore error! Cum aperiam ullam id explicabo laborum assumenda mollitia omnis fuga atque cumque, consectetur magnam in harum cupiditate!
+                        Suscipit iste vitae eos eveniet commodi voluptate delectus vero libero dicta illum ipsa maxime, dolores natus odio laudantium maiores distinctio doloremque dolorem voluptatem veritatis cupiditate. Velit eveniet dicta veritatis minus.
+                        Corporis, est. Veritatis ab, recusandae cumque maiores eaque nobis nam incidunt! Impedit explicabo eius dolorem, quia animi, cupiditate eveniet exercitationem repellat veritatis pariatur amet numquam, odio enim consectetur modi repellendus?
+                    </div>
                 </div>
             </div>
         </div>    
@@ -104,9 +195,10 @@
                     <li><a href="#cat3">Fantasia</a></li>
                 </ul>
             </div>
-            <div class="post">
+            <div class="ultimo-post">
                 <h2>Último Post</h2>
                 <div class="contenido-post" id="ultimo-post">
+                    Titulo del libro: <spam id="titulo"></spam><br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima et esse quod sunt quae fugit. Placeat autem nemo soluta nesciunt consequatur voluptas, saepe, quam perferendis alias expedita, mollitia molestiae?
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas magnam quae iusto numquam modi, architecto officiis veniam in unde, exercitationem nobis sapiente, quo aut cum? Molestiae rem eveniet ut. Omnis.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quas id delectus in quo commodi est doloribus aperiam at doloremque rem, aliquam voluptate? Voluptatibus, aperiam error repellat neque fuga vero!
