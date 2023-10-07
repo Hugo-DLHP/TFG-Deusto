@@ -19,7 +19,7 @@
         </div>
     </nav>
     <div class="contenedor">
-        <div class="contenedor-formulario" id="contenedor-formulario">
+        <div id="contenedor-formulario">
             <!-- Formulario de inicio de sesión -->
             <form id="login">
                 <h2>Iniciar Sesión</h2>
@@ -31,17 +31,17 @@
             </form>
 
             <!-- Formulario de registro -->
-            <form id="register" style="display: none;" action="registrar.php" method="post">
+            <form id="register" style="display: none;" action="registro.php" method="post">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" required>
+                <input type="text" name="nombre" id="nombre" required>
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" required>
+                <input type="text" name="apellidos" id="apellidos" required>
                 <label for="nuevo-usuario">Nombre de Usuario:</label>
-                <input type="text" id="nuevo-usuario" required>
-                <label for="nuevoa-contraseña">Contraseña:</label>
-                <input type="password" id="nuevoa-contraseña" required>
+                <input type="text" name="nuevo-usuario" id="nuevo-usuario" required>
+                <label for="nueva-contraseña">Contraseña:</label>
+                <input type="password" name="nueva-contraseña" id="nueva-contraseña" required>
                 <label for="confirmar-contraseña">Confirmar Contraseña:</label>
-                <input type="password" id="confirmar-contraseña" required>
+                <input type="password" name="nueva-contraseña" id="confirmar-contraseña" required>
                 <button type="submit">Registrarse</button>
             </form>
 
@@ -49,7 +49,6 @@
          
             <p id="textoLink">¿No estás registrado? <a href="#" id="link">Haz clic aquí para registrarte.</a></p>
         </div>
-
         <script>
             const login = document.getElementById("login");
             const register = document.getElementById("register");
@@ -72,7 +71,7 @@
 
             register.addEventListener("submit", function (event) {
                 event.preventDefault();
-                const newPassword = document.getElementById("nuevoa-contraseña").value;
+                const newPassword = document.getElementById("nueva-contraseña").value;
                 const confirmPassword = document.getElementById("confirmar-contraseña").value;
 
                 if (newPassword !== confirmPassword) {
