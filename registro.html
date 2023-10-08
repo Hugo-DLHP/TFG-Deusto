@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="./index.html"><img src="../img/pruebaLogo1.png" alt=""></a></div>
+        <div class="barnav">
+            <a href="./login.html" id="sesion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                </svg>
+            </a>          
+            <button id="menu-toggle">☰</button>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <div id="contenedor-formulario">
+            <!-- Formulario de registro -->
+            <form id="register" action="registro.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" required>
+                <label for="nuevo-usuario">Nombre de Usuario:</label>
+                <input type="text" name="nuevo-usuario" id="nuevo-usuario" required>
+                <label for="nueva-contraseña">Contraseña:</label>
+                <input type="password" name="nueva-contraseña" id="nueva-contraseña" required>
+                <label for="confirmar-contraseña">Confirmar Contraseña:</label>
+                <input type="password" name="nueva-contraseña" id="confirmar-contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
