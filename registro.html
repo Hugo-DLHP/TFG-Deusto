@@ -20,7 +20,6 @@
     </nav>
     <div class="contenedor">
         <div id="contenedor-formulario">
-            <!-- Formulario de registro -->
             <form id="register" action="registro.php" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" required>
@@ -36,5 +35,22 @@
             </form>
         </div>
     </div>
+    <script>
+        const nuevoUsuarioInput = document.getElementById('nuevo-usuario');
+
+        nuevoUsuarioInput.addEventListener('input', () => {
+            const nuevoUsuario = nuevoUsuarioInput.value;
+
+            fetch(`verificar_usuario.php?usuario=${nuevoUsuario}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.existe) {
+                        alert('Este nombre de usuario ya está en uso.');
+                        nuevoUsuarioInput.value = ''; 
+                    }
+                });
+        });
+
+    </script>
 </body>
 </html>
