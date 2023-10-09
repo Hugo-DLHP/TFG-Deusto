@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS usuarios;
 DROP TABLE IF EXISTS posts;
+DROP TABLE IF EXISTS usuarios;
 
 
 CREATE TABLE usuarios (
@@ -14,7 +14,7 @@ CREATE TABLE posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo_del_libro VARCHAR(255) NOT NULL,
     post TEXT NOT NULL CHECK(LENGTH(post) <= 500),
-    fecha_publicacion DATE NOT NULL,
+    fecha_publicacion DATETIME NOT NULL,
     categoria ENUM('terror', 'romance', 'fantasia') NOT NULL,
     usuario_id INT,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id)

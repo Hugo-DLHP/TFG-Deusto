@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><a href="../html/index.html"><img src="../img/pruebaLogo1.png" alt=""></a></div>
+        <div class="logo"><a href="./index.php"><img src="../img/pruebaLogo1.png" alt=""></a></div>
         <div class="barnav">
             <a href="#" id="sesion">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -41,16 +41,7 @@
             <div id="post_usuario">
                 <?php
                     if (isset($_SESSION['usuario'])) {
-                        $servername = "localhost";
-                        $username = "root";
-                        $password = "";
-                        $database = "proyecto";
-
-                        $conn = new mysqli($servername, $username, $password, $database);
-
-                        if ($conn->connect_error) {
-                            die("Conexión fallida: " . $conn->connect_error);
-                        }
+                        require('conexion.php');
 
                         $usuario_id = $_SESSION['usuario_id'];
 
@@ -76,7 +67,7 @@
 
                         $conn->close();
                     } else {
-                        header("Location: ../html/index.html");
+                        header("Location: ../php/index.php");
                         exit();
                     }
                 ?>
@@ -85,11 +76,3 @@
     </div>
 </body>
 </html>
-
-
-<div class="post">
-    <div id="contenido-post">
-        Titulo del libro: <spam id="titulo"></spam><br>
-        <spam id="contenido"></spam><br>
-    </div>
-</div>

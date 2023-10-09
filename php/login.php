@@ -1,14 +1,5 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "proyecto";
-
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
-    }
+    require('conexion.php');
 
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
@@ -24,7 +15,7 @@
         $_SESSION['usuario'] = $usuario;
         $_SESSION['usuario_id'] = $usuario_id;
 
-        header("Location: user-home.php");
+        header("Location: ../php/user-home.php");
         exit();
     } else {
         echo "Error: Usuario o contraseña incorrectos.";

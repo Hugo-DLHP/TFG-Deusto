@@ -98,9 +98,10 @@ nav .barnav div:hover{
 }
 
 .izquierda .seccion {
-    margin-bottom: 30px;
-    
+    width: 90%;
+    margin: 0 auto; /* Esto centrará el contenido en el div izquierda */
 }
+
 
 .izquierda .seccion h2 {
     font-size: 24px;
