@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav>
@@ -20,8 +20,7 @@
     </nav>
     <div class="contenedor">
         <div id="contenedor-formulario">
-            <!-- Formulario de registro -->
-            <form id="register" action="registro.php" method="post">
+            <form id="register" action="../php/registro.php" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" required>
                 <label for="apellidos">Apellidos:</label>
@@ -36,5 +35,22 @@
             </form>
         </div>
     </div>
+    <script>
+        const nuevoUsuarioInput = document.getElementById('nuevo-usuario');
+
+        nuevoUsuarioInput.addEventListener('input', () => {
+            const nuevoUsuario = nuevoUsuarioInput.value;
+
+            fetch(`../php/verificar_usuario.php?usuario=${nuevoUsuario}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.existe) {
+                        alert('Este nombre de usuario ya está en uso.');
+                        nuevoUsuarioInput.value = ''; 
+                    }
+                });
+        });
+
+    </script>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Post</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="./index.html"><img src="../img/pruebaLogo1.png" alt=""></a></div>
+        <div class="barnav">
+            <a href="../php/user-home.php" id="sesion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                </svg>
+            </a>          
+            <button id="menu-toggle">☰</button>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <div class="formulario-crear-post">
+            <form action="../php/procesar_post.php" method="post">
+                <h2>Crear un nuevo post</h2>
+                <label for="titulo">Título del libro:</label>
+                <input type="text" id="titulo" name="titulo" class="input-field" required><br>    
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" class="input-field" required>
+                    <option value="fantasia">Fantasía</option>
+                    <option value="romance">Romance</option>
+                    <option value="terror">Terror</option>
+                </select><br>
+                <label for="resena">Reseña del libro (máximo 500 caracteres):</label><br>
+                <textarea id="resena" name="resena" class="textarea-field" maxlength="500" required></textarea><br>
+                <button type="submit" class="submit-button">Publicar Post</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
