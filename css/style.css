@@ -353,3 +353,44 @@ div.contenedor > h2{
     border-radius: 0px;
 }
 
+.formulario-crear-post {
+    width: 300px;
+    background-color: #f2f2f2;
+    max-height: calc(100vh - 230px);
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px auto;
+    overflow-y: auto;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.textarea-field {
+    margin-bottom: 20px;
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 150px;
+}
+
+.submit-button {
+    background-color: #D4AF37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #FFD700;
+}

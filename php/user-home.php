@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><a href="./index.html"><img src="../img/pruebaLogo1.png" alt=""></a></div>
+        <div class="logo"><a href="../html/index.html"><img src="../img/pruebaLogo1.png" alt=""></a></div>
         <div class="barnav">
             <a href="#" id="sesion">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
