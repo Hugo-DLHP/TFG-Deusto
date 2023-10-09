@@ -62,12 +62,12 @@
                                 $titulo = $row['titulo_del_libro'];
                                 $contenido = $row['post'];
                 ?>
-                    <div class="post">
-                        <div id="contenido-post">
-                            Titulo del libro: <span id="titulo"><?php echo $titulo; ?></span><br>
-                            <span id="contenido"><?php echo $contenido; ?></span><br>
+                        <div class="post">
+                            <div id="contenido-post">
+                                Titulo del libro: <span id="titulo"><?php echo $titulo; ?></span><br>
+                                <span id="contenido"><?php echo $contenido; ?></span><br>
+                            </div>
                         </div>
-                    </div>
                 <?php
                             }
                         } else {

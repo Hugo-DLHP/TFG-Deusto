@@ -19,7 +19,6 @@
     $resultado = $conn->query($verificarUsuario);
 
     if ($resultado->num_rows > 0) {
-        // El nombre de usuario ya está en uso, mostrar un mensaje de error
         echo "Error: Este nombre de usuario ya está siendo utilizado.";
     } else {
         $sql = "INSERT INTO usuarios (nombre, apellidos, usuario, contrasena) VALUES ('$nombre', '$apellidos', '$usuario', '$contraseña')";
