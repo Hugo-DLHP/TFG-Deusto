@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav>
@@ -31,13 +31,13 @@
                     if (isset($_SESSION['usuario'])) {
                         echo "<span>" . $_SESSION['usuario'] . "</span>";
                     } else { 
-                        header("Location: index.html");
+                        header("Location: ../html/index.html");
                         exit();
                     }
                 ?>
             </div>
             <hr class="linea-divisoria">
-                <button onclick="window.location.href='publicar_post.html';">Publicar Post</button>
+                <button onclick="window.location.href='../html/publicar_post.html';">Publicar Post</button>
             <div id="post_usuario">
                 <?php
                     if (isset($_SESSION['usuario'])) {
@@ -76,7 +76,7 @@
 
                         $conn->close();
                     } else {
-                        header("Location: index.html");
+                        header("Location: ../html/index.html");
                         exit();
                     }
                 ?>

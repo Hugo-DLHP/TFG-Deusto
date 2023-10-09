@@ -24,7 +24,7 @@
         $sql = "INSERT INTO usuarios (nombre, apellidos, usuario, contrasena) VALUES ('$nombre', '$apellidos', '$usuario', '$contraseña')";
 
         if ($conn->query($sql) === TRUE) {
-            header("Location: login.html");
+            header("Location: ../html/login.html");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;

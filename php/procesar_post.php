@@ -37,7 +37,7 @@
         $stmt->close();
         $conn->close();
     } else {
-        header("Location: index.html");
+        header("Location: ../html/index.html");
         exit();
     }
 ?>
